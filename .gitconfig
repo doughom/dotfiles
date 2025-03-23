@@ -1,0 +1,24 @@
+[core]
+    autocrlf = false
+    eol = lf
+
+[credential]
+    helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+    useHttpPath = true
+
+[init]
+    defaultBranch = main
+
+[merge]
+    ff = only
+
+[push]
+    autoSetupRemote = true
+
+[includeIf "gitdir:~/repos/play/"]
+    path = ~/repos/play/.gitconfig
+
+[includeIf "gitdir:~/repos/work/"]
+    path = ~/repos/work/.gitconfig
