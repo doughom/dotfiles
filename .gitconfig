@@ -17,6 +17,7 @@
 [push]
     autoSetupRemote = true
 
+# Use separate credentials, email, and name based on path. See README for details.
 [includeIf "gitdir:~/repos/play/"]
     path = ~/repos/play/.gitconfig
 
